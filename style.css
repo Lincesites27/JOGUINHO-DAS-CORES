@@ -1,0 +1,164 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px;
+    width: 550px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+   
+   
+}
+.main.rosa{
+    background-color: pink;
+}
+
+.main.azul{
+    background-color: rgb(56, 7, 233);
+}
+.main.amarelo{
+   background-color:  rgb(211, 255, 15);
+}
+.main.verde{
+    background-color: rgb(25, 218, 22) ;
+}
+.main.rosa h1{
+    display: flex;
+}
+.main.amarelo h1{
+    display: flex;
+}
+.main.verde h1{
+    display: flex;
+}
+.main.azul h1{
+    display: flex;
+}
+
+.btn{
+    padding: 12px 24px;
+}
+.btn-rosa{
+    animation: animate1 linear infinite 15s;
+    position: absolute;
+    border: 1px solid #fff;
+    background-color: pink;
+    transition: .5s;
+
+}
+.btn-verde{
+    animation: animate2 linear infinite 15s;
+    position: absolute;
+    border: 1px solid #fff;
+     background-color: rgb(25, 218, 22);
+}
+.btn-azul{
+    animation: animate3 linear infinite 15s;
+    border: 1px solid #fff;
+    background-color: rgb(56, 7, 233);
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+   
+}
+
+
+.btn-amarelo{
+    animation: animate4 linear infinite 15s;
+    position: absolute;
+    bottom: 40px;
+    border: 1px solid #fff;
+     background-color: rgb(211, 255, 15);
+}
+
+.main button{
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    color: #000;
+     border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animate1 {
+  0%{
+    right: -100px;
+  }
+  
+  50%{
+    right: 100%;
+  }
+  
+  100%{
+    right: -100px;
+  }
+}
+@keyframes animate2 {
+    0%{
+      left: -100px;
+    }
+   
+    50%{
+      left: 100%;
+    }
+   
+    100%{
+      left: -100px;
+    }
+  }
+  @keyframes animate3 {
+    0%{
+      right: -100px;
+    }
+    25%{
+
+    }
+    50%{
+      right:100%;
+    }
+    100%{
+      right: -100px;
+    }
+  }
+  @keyframes animate4 {
+    0%{
+      left: -100px;
+    }
+    50%{
+      left:100%;
+    }
+    100%{
+      left: -100px;
+    }
+  }
+  
+  @keyframes pulse {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+  }
