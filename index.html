@@ -13,11 +13,20 @@
 <body>
     <div class="main" id="main">
         
-         <button onclick="trocaClasseRosa()" class="btn-rosa"> ROSA</button>
-        <button onclick="trocaClasseVerde()" class="btn-verde"> VERDE</button>
-        <button onclick="trocaClasseAzul()" class="btn-azul"> AZUL</button>
-        <button onclick="trocaClasseAmarelo()" class="btn-amarelo"> AMARELO</button>
+         <button onclick="trocaClasse(this.dataset.cor)" class="btn-rosa"   data-cor="rosa"> ROSA</button>
+        <button onclick="trocaClasse(this.dataset.cor)"  class="btn-verde"  data-cor="verde"> VERDE</button>
+        <button onclick="trocaClasse(this.dataset.cor)"  class="btn-azul"   data-cor="azul"> AZUL</button>
+        <button onclick="trocaClasse(this.dataset.cor)" class="btn-amarelo"  data-cor="amarelo"> AMARELO</button>
 
+    </div>
+
+    <div>
+        <h1 id="contadorAzul">Azul: 0</h1>
+        <h1 id="contadorAmarelo"> Amarelo: 0</h1>
+        <h1 id="contadorVerde">Verde: 0</h1>
+        <h1 id="contadorRosa">Rosa: 0</h1>
+
+        <button onclick="zerarContador()" class="btn-zerar">Zerar contadores</button>
     </div>
 </body>
 
